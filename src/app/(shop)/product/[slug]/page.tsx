@@ -1,4 +1,4 @@
-import { SizeSelector } from "@/components";
+import { QuantitySelector, SizeSelector } from "@/components";
 import { titleFont } from "@/config/fonts";
 import { initialData } from "@/seed/seed";
 import { notFound } from "next/navigation";
@@ -43,6 +43,9 @@ export default function({ params }:Props) {
         />
 
         {/* Quantity selector */}
+        <QuantitySelector 
+          quantity={ 2 }
+        />
 
         {/* Button */}
         <button className="btn-primary my-5"> 
