@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <>
       <Title 
-        title="Tienda"
-        subtitle="Todos los productos"
+        title="Shop"
+        subtitle="All products"
         className="mb-2"
       />
 
