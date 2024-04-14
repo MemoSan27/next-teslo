@@ -1,4 +1,4 @@
-import { QuantitySelector, SizeSelector } from "@/components";
+import { ProductSlideShow, QuantitySelector, SizeSelector } from "@/components";
 import { titleFont } from "@/config/fonts";
 import { initialData } from "@/seed/seed";
 import { notFound } from "next/navigation";
@@ -24,7 +24,10 @@ export default function({ params }:Props) {
       {/* Slideshow */}
       <div className="col-span-1 md:col-span-2">
 
-        <h1> Hola mundo </h1>
+        <ProductSlideShow 
+          title={ product.title }
+          images={ product.images }
+        />
 
       </div>
 
@@ -49,11 +52,11 @@ export default function({ params }:Props) {
 
         {/* Button */}
         <button className="btn-primary my-5"> 
-          Agregar al carrito
+          Add to cart
         </button>
 
         {/* Descripcion */}
-        <h3 className="font-bold text-sm">Descripcion</h3>
+        <h3 className="font-bold text-sm">Description</h3>
         <p className="font-light">
           {product.description}
         </p>
