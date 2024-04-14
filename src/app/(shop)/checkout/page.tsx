@@ -1,4 +1,4 @@
-import { QuantitySelector, Title } from "@/components";
+import { Title } from "@/components";
 import { initialData } from "@/seed/seed";
 import Image from "next/image";
 import Link from "next/link";
@@ -101,9 +101,9 @@ export default function() {
                   <p className="mb-5">
                     { /* Disclaimer */ }
                     <span className="text-xs">
-                      After you click "Assign order", you are accepting &nbsp;
+                      After you click &quot;Assign order&quot;, you are accepting our &nbsp;
                       <a href="#" className="underline">Terms and Conditions </a>
-                      &nbsp; and our
+                      &nbsp; and 
                       <a href="#" className="underline"> Privacity Policies </a>
                     </span>
                   </p>
