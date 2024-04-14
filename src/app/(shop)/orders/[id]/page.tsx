@@ -84,7 +84,7 @@ export default function( { params }:Props ) {
 
 
             { /* Checkout */}
-            <div style={{ height: '580px'}} className="bg-white rounded-xl shadow-xl p-7">
+            <div className="bg-white rounded-xl shadow-xl p-7 h-fit">
 
                 <h2 className="text-2xl mb-2 font-bold">Deliver Address</h2>
                 <div className="mb-10">
